@@ -1,0 +1,24 @@
+{
+  "http": {
+    "status": {
+      "401": "Invalid username or password",
+      "403": "Forbidden",
+      "500": "Internal Server Error"
+    },
+    "data": {
+      "emptyData": "No data to display.",
+      "failedAction": "Failed action."
+    },
+    "message": {
+      "success": "Success",
+      "unsuccess": "Unsuccess",
+      "successfully": "Successfully",
+      "failed": "Failed"
+    }
+  },
+  "general": {
+    "wrongData": "something is wrong",
+    "incompleteData": "system incomplete data",
+    "UserNotFound": "User not Found"
+  }
+}

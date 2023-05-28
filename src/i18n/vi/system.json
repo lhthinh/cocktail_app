@@ -1,0 +1,24 @@
+{
+  "http": {
+    "status": {
+      "401": "Sai tên tài khoản hoặc mật khẩu",
+      "403": "Phát sinh lỗi, bạn không có quyền truy cập hoặc sai chứng thực",
+      "500": "Lỗi máy chủ"
+    },
+    "data": {
+      "emptyData": "Không có dữ liệu để hiển thị.",
+      "failedAction": "Thao tác không thành công."
+    },
+    "message": {
+      "success": "Thao tác thành công",
+      "unsuccess": "Thao tác không thành công",
+      "successfully": "Thao tác thành công",
+      "failed": "Thao tác thất bại"
+    }
+  },
+  "general": {
+    "wrongData": "Dữ liệu truyền không đúng",
+    "incompleteData": "Dữ liệu hệ thống không đầy đủ",
+    "UserNotFound": "Tài khoản không có thông tin. Yêu cầu đăng nhập lại"
+  }
+}
