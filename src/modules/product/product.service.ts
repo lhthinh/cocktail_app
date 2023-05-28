@@ -51,7 +51,7 @@ export class ProductService {
           ingredientProduct.ingredient.ingredientName +
           suffix
       })
-      return { id: item.id, productName: item.productName, recipe }
+      return { id: item.id, productName: item.productName, recipe, image: item.image }
     })
     return resProduct
   }
