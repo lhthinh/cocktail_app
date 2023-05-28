@@ -24,6 +24,7 @@ export class ProductService {
         unit,
       })
     }
+    return await this.productRepository.findOneBy({ id: product.id })
   }
 
   addImage(file: Express.Multer.File, id: number) {
