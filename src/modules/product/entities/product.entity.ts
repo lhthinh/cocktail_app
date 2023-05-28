@@ -10,6 +10,9 @@ export class Product {
   @Column({ name: 'name' })
   productName: string
 
+  @Column({ name: 'image', nullable: true })
+  image: string
+
   @OneToMany(() => IngredientProduct, ingredientProduct => ingredientProduct.product)
   ingredientProduct: IngredientProduct[]
 

@@ -15,7 +15,6 @@ export class ProductService {
   async create(createProductDto: CreateProductDto) {
     const { ingredients, productName } = createProductDto
     const product = await this.productRepository.save({ productName })
-    console.log(ingredients)
     for await (const ingredient of ingredients) {
       const { ingredientId, quantity, unit } = ingredient
       await this.ingredientProductService.create({
@@ -27,6 +26,12 @@ export class ProductService {
     }
   }
 
+  addImage(file: Express.Multer.File, id: number) {
+    return this.productRepository.save({
+      id,
+      image: '/files/product/' + file.filename,
+    })
+  }
   async findAll() {
     const products = await this.productRepository.find({
       relations: {

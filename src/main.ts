@@ -17,6 +17,10 @@ async function bootstrap() {
   app.useStaticAssets(join(__dirname, '..', 'files', 'avatar'), {
     prefix: '/files/avatar/',
   })
+
+  app.useStaticAssets(join(__dirname, '..', 'files', 'product'), {
+    prefix: '/files/product/',
+  })
   // Swagger
   const document = SwaggerModule.createDocument(app, swaggerConfig)
   SwaggerModule.setup('swagger-ui', app, document)
