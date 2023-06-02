@@ -1,5 +1,6 @@
 import { IngredientProduct } from 'src/modules/ingredient-product/entities/ingredient-product.entity'
 import { Rating } from 'src/modules/rating/entities/rating.entity'
+import { UserProduct } from 'src/user-product/entities/user-product.entity'
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm'
 
 @Entity('product')
@@ -18,4 +19,7 @@ export class Product {
 
   @OneToMany(() => Rating, rating => rating.product)
   ratings: Rating[]
+
+  @OneToMany(() => UserProduct, userProduct => userProduct.product)
+  userProducts: UserProduct[]
 }

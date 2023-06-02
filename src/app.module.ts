@@ -14,6 +14,7 @@ import { ProductModule } from './modules/product/product.module'
 import { IngredientProductModule } from './modules/ingredient-product/ingredient-product.module'
 import { MulterModule } from '@nestjs/platform-express'
 import { RatingModule } from './modules/rating/rating.module'
+import { UserProductModule } from './user-product/user-product.module'
 
 @Module({
   imports: [
@@ -29,6 +30,7 @@ import { RatingModule } from './modules/rating/rating.module'
     ProductModule,
     IngredientProductModule,
     RatingModule,
+    UserProductModule,
   ],
   controllers: [AppController],
   providers: [AppService],

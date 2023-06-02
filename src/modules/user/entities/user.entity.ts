@@ -1,4 +1,5 @@
 import { Rating } from 'src/modules/rating/entities/rating.entity'
+import { UserProduct } from 'src/user-product/entities/user-product.entity'
 import {
   BaseEntity,
   Column,
@@ -43,4 +44,7 @@ export class User extends BaseEntity {
 
   @OneToMany(() => Rating, rating => rating.user)
   ratings: Rating[]
+
+  @OneToMany(() => UserProduct, userProduct => userProduct.user)
+  userProducts: UserProduct[]
 }
